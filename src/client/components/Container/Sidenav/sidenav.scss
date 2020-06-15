@@ -1,0 +1,78 @@
+@import "../../../assets/scss/variables";
+
+.left-sidebar {
+  z-index: 9999;
+  .sidenav {
+    width: inherit;
+    background: #fff;
+    color: #fff;
+    position: absolute;
+    transition: all 0.3s;
+    z-index: 999;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 5px;
+    height: calc(100vh - -20px - 17px);
+    overflow: scroll;
+    padding-top: 45px;
+
+    .sidebar-nav {
+      padding-top: 40px;
+      color: black;
+      padding-left: 10px;
+      ul {
+        li {
+          a {
+            position: relative;
+            display: block;
+            padding: 13px 10px;
+            color: #8d9498;
+            outline-width: 0;
+            //  transition: all .3s ease-out;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            i {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sidebar-header {
+    position: relative;
+    z-index: 9;
+    padding: 10px;
+  }
+}
+.active {
+  
+  .logo {
+    img.main-logo {
+      padding-left: 16px;
+      width: 200px;
+    }
+  }
+}
+.inactive {
+  width: 80px;
+  ul {
+    li {
+      a {
+        .hide {
+          display: none;
+          padding-left: 12px;
+        }
+      }
+    }
+  }
+}
+i {
+  font-size: 20px;
+}
+
+li:hover {
+  background-color: $gray;
+  display: block;
+}
